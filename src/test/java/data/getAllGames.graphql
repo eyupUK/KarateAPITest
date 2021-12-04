@@ -1,0 +1,11 @@
+{
+games {
+id
+name
+slug
+supplier{
+    id
+    name
+    }
+}
+}

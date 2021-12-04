@@ -1,0 +1,11 @@
+mutation addnewGame($name: String!,$slug: String!,$supplier: ID!) {
+    addGame(input:{name:$name, slug:$slug,supplier:$supplier}) {
+        id
+        name
+        slug
+        supplier{
+            id
+            name
+        }
+    }
+}

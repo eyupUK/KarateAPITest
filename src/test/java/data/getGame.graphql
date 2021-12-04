@@ -1,0 +1,10 @@
+query getGame($id:ID!){ game(id:$id) {
+    id
+    name
+    slug
+    supplier{
+        id
+        name
+    }
+}
+}

@@ -1,0 +1,11 @@
+mutation updatenewGame($id:ID!,$name: String!,$slug: String!,$supplier: ID!)
+{updateGame (id:$id,input:{name:$name, slug:$slug,supplier:$supplier}) {
+    id
+    name
+    slug
+    supplier{
+        id
+        name
+    }
+}
+}
