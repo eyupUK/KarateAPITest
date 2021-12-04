@@ -4,7 +4,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Karate.class)
 @KarateOptions(
-        tags = "@wip"
+        tags = "@getall or @addgame or @wip or @schemaValidation or @update"
 )
 public class FeatureRunner {
 }
