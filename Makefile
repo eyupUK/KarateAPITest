@@ -12,4 +12,4 @@ logs:
 
 test: stop start
 	# Feel free to put your test commands here
-	mvn test -Dcucumber.options="--tags '@getall or @addgame or @wip or @schemaValidation or @update'"
+	mvn test -Dcucumber.options="--tags '@APItest'"
