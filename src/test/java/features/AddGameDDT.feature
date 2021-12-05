@@ -1,8 +1,9 @@
-@wip
+@wip @APItest
 Feature: AddGameDDT
 
   Background:
-    * def gameUrl = 'http://localhost:4000'
+    * def configuration = Java.type('utilities.ConfigurationReader')
+    * def gameUrl = configuration.get("test_api_url")
     * def query = read ('classpath:data/addGame.graphql')
     * def queryGet = read ('classpath:data/getAllGames.graphql')
 

@@ -1,8 +1,9 @@
-@update
+@update @APItest
 Feature: UpdateGame
 
   Background:
-    * def gameUrl = 'http://localhost:4000'
+    * def configuration = Java.type('utilities.ConfigurationReader')
+    * def gameUrl = configuration.get("test_api_url")
     * def query = read ('classpath:data/updateGame.graphql')
     * def GG = Java.type('utilities.GameUpdater')
     ##defining updated data and the data id which will be updated

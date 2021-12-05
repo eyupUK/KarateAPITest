@@ -1,8 +1,9 @@
-@getall
+@getall @APItest
 Feature: Task 2
 
   Background:
-    * def gameUrl = 'http://localhost:4000'
+    * def configuration = Java.type('utilities.ConfigurationReader')
+    * def gameUrl = configuration.get("test_api_url")
     * def query = read ('classpath:data/getAllGames.graphql')
 
 
