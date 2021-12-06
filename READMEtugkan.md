@@ -66,25 +66,7 @@ Sample tests can be found in the below classes:
 * Cucumber html reports are generated in /cucumber-html-reports/. 
   Also Surefire reports are generated in /surefire-reports/karate-summary/
   *(Cucumber html reports only available with parallel testing)
-## Docker run
-We can run the test with `docker image` 
 
-```bash
-> docker build --rm -t sbgtest .
-```
-
-When it finishes, you will get the images:
-```bash
-> docker images
-REPOSITORY                         TAG                 IMAGE ID            CREATED             
-sbgtest                           latest              351893694953        About an hour ago    
-ngr05/sbg-gaming-seit-tech-test   latest              d9c48619f8aa        15 months ago        
-```
-
-To run the tests with the image:
-```bash
-> docker run --rm -v $PWD:/sbgtest sbgtest bash -c "mvn clean test"
-```
 
 ## Framework Structure:
 
