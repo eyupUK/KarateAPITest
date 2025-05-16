@@ -55,5 +55,3 @@ Similar to task 2, test one of the mutations.
 If you feel like there is more that you would like to add, feel free to test the application more. There are bugs in the application by design so see how many you can find...
 
 ### Once complete
-
-Once complete, please e-mail a link to your repo and instructions to run your tests to Nicholas.Green@skybettingandgaming.com.
